@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	
 }
 
 ol, ul {
@@ -486,7 +487,48 @@ input, select, textarea {
 		hr.major {
 			margin: 3em 0;
 		}
+/* Logo */
+.logo {
+	display: flex;
+	margin-bottom: 35px;
+}
+.logo-text {
+	display: block;
+	height: 50.2px;
+}
+.logo p {
+	color: #fff;
+	margin: 0 15px;
+	padding: 0;
+}
+.logo h1 {
+	line-height: 50px;
+	margin: 15px !important;
+	padding: 0;
+}
 
+
+
+.logo-fixed {
+	position: fixed; 
+	top: 0;
+	left: 50%;
+	-ms-transform: rotate(30deg); /* IE 9 */
+	-webkit-transform: rotate(30deg); /* Safari */
+	transform: rotate(30deg);
+	
+}
+.logo-fixed img {
+	width: 200%;
+	opacity: 0.1;
+	filter: alpha(opacity=10);
+
+}
+
+/* projects */
+.projects {
+	max-width: 200px;
+}
 /* Section/Article */
 
 	section.special, article.special {
