@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
-	
+
 }
 
 ol, ul {
@@ -86,7 +86,7 @@ input, select, textarea {
 	@media screen and (max-width: 480px) {
 
 		html, body {
-			min-width: 320px;
+			min-width: 480px;
 		}
 
 	}
@@ -527,15 +527,31 @@ input, select, textarea {
 
 .portrait {
 	position: fixed; 
-	top: 0;
-	right: 30%;
+	bottom: -5%;
+	right: 10%;
 
 	
 }
 .portrait img {
-	width: 200%;
+	width: 130%;
 	opacity: 0.09;
 	filter: alpha(opacity=9);
+
+}
+@media screen and (max-width: 1356px) {
+
+	.logo-fixed {
+top: 10%;
+		left: -30%;
+
+		
+	}
+	.logo-fixed img {
+
+		opacity: 0.1;
+		filter: alpha(opacity=10);
+	
+	}
 
 }
 /* projects */
