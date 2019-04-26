@@ -512,7 +512,7 @@ input, select, textarea {
 .logo-fixed {
 	position: fixed; 
 	top: 0;
-	left: 50%;
+	left: -10%;
 	-ms-transform: rotate(30deg); /* IE 9 */
 	-webkit-transform: rotate(30deg); /* Safari */
 	transform: rotate(30deg);
@@ -525,6 +525,19 @@ input, select, textarea {
 
 }
 
+.portrait {
+	position: fixed; 
+	top: 0;
+	right: 30%;
+
+	
+}
+.portrait img {
+	width: 200%;
+	opacity: 0.09;
+	filter: alpha(opacity=9);
+
+}
 /* projects */
 .projects {
 	max-width: 250px;
