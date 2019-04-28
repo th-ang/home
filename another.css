@@ -26,27 +26,10 @@ body {
     height: 320px;
     top: 0;
     transform: rotate(-20deg);
- 
-}
-/* make t-sharp */
-.t-sharp {
-    position: relative;
- 
-    width: 320px;
-    height: 120px;
    
-    opacity: 0.5;
-    z-index: -1000;
+ 
 }
-.t-sharp:before {
-    content: '';
-    position: absolute;
 
-    height: 320px;
-    width: 120px;
-    left: 100px;
-    z-index: -1000;
-}
 
 /* navigition  */
 .t-sharp-nav {
@@ -55,6 +38,7 @@ body {
     height: 320px;
     top:0;
     left: 0;
+    
 }
 
 .t-sharp-nav a{
@@ -67,7 +51,17 @@ font-size: 22pt;
 -moz-user-select: none;     /* Firefox all */
 -ms-user-select: none;      /* IE 10+ */
 user-select: none;  
+transition: all 0.5s ease, transform 1ms;
+
+
 }
+.t-sharp-nav a:hover {
+    color: #fff;
+  
+}
+
+
+
 .a-porlifio {
     position: absolute;
     left: 0;
@@ -86,6 +80,9 @@ user-select: none;
     left: 39px;
     transform: rotate(90deg)}
 
+
+
+
     /* elements text */
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico');
 
@@ -95,7 +92,8 @@ user-select: none;
         height: 320px;
         top:0;
         left: 0;
-    }
+     }
+
 .t-sharp-elements span {
     color: rgb(214, 214, 214);
     -webkit-user-select: none;  /* Chrome all / Safari all */
@@ -201,6 +199,7 @@ transform: rotate(90deg);
     bottom: 60px;
     font-size: 29pt;
 }
+
 .s-explorer {
     position: absolute;
     right: 3px;
