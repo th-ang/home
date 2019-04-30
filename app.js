@@ -1,6 +1,8 @@
 const tSharpElements = document.getElementsByClassName('t-sharp-elements')[0];
-const tSharpLinks = document.getElementsByClassName('t-sharp-nav')[0];
-
+const tSharpPorlifio = document.getElementsByClassName('a-porlifio')[0];
+const tSharpBlog = document.getElementsByClassName('a-blog')[0];
+const tSharpProjects = document.getElementsByClassName('a-projects')[0];
+const tLinksArr = [tSharpBlog,tSharpPorlifio,tSharpProjects];
 function fadeIn(el){
     el.classList.add('show');
     el.classList.remove('dim');  
@@ -12,22 +14,36 @@ function fadeIn(el){
  
   }
   
+for (let  i = 0; i< tLinksArr.length; i++) {
+tLinksArr[i].addEventListener('mouseover',()=>{
+  if (tSharpElements.className.indexOf('dim') !== -1) {
+    tLinksArr.forEach(el=> {
+      fadeIn(el);
+    })
+    fadeIn(tSharpElements);
+  }
+  else {tLinksArr.forEach(el=> {
+    dim(el);
+  })
+  dim(tSharpElements);
+  fadeIn(tLinksArr[i]);
+}})
+tLinksArr[i].addEventListener('mouseout', function(){
+  if (tSharpElements.className.indexOf('dim') !== -1) {
+    tLinksArr.forEach(el=> {
+      fadeIn(el);
+    });
+    fadeIn(tSharpElements);
+   
+  }
+  else {
+    tLinksArr.forEach(el=> {
+      dim(el);
+    });
+    dim(tSharpElements);
+    fadeIn(tLinksArr[i]);
+  }
+});
+}
 
-  tSharpLinks.addEventListener('mouseover', function(){
-    if (tSharpElements.className.indexOf('dim') !== -1) {
-      fadeIn(tSharpElements);
-     
-    }
-    else {
-      dim(tSharpElements);
-    }
-  });
-  tSharpLinks.addEventListener('mouseout', function(){
-    if (tSharpElements.className.indexOf('dim') !== -1) {
-      fadeIn(tSharpElements);
-     
-    }
-    else {
-      dim(tSharpElements);
-    }
-  });
+
