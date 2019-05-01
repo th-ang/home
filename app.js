@@ -13,7 +13,7 @@ function fadeIn(el){
     el.classList.remove('show');
  
   }
-  
+ 
 for (let  i = 0; i< tLinksArr.length; i++) {
 tLinksArr[i].addEventListener('mouseover',()=>{
   if (tSharpElements.className.indexOf('dim') !== -1) {

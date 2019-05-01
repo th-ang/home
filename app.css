@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico');
-
+body {
+    overflow-y: hidden;
+    height: 100vh;
+}
 .bg-tex {
     background: url(assets/bg.gif);
-}
-.container {
     
 }
+
+
 .panel {
     display: flex;
     justify-content: center;
@@ -15,13 +18,7 @@
 
 
 
-@media (max-width:400px) {
-   
-}
 
-@media (max-width:550px) {
-
-}
 
 
 .nav-sharp {
@@ -29,10 +26,42 @@
     width: 300px;
     height: 300px;
     
- 
-    
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
     
 }
+
+/*  Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .nav-sharp {
+        transform: scale(1.2)
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .nav-sharp {
+        transform: scale(1.5)
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .nav-sharp {
+        transform: scale(1.8) 
+    }
+}
+
+/* 
+// Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .nav-sharp {
+        transform: scale(2.2) 
+    }
+}
+
 /* bio */
 .bio {
     width: 100%;
@@ -43,23 +72,27 @@
 .t-sharp-nav {
     position: relative;
     min-width: 300px;
-    top:0;
+    top: 0;
     left: 0;
     transition: all 0.5s ease, transform 1ms;
 }
 
-.t-sharp-nav a{
-color: dodgerblue;    
-text-decoration: none;
-text-transform: uppercase;
-font-weight: bold;
-font-size: 22pt;
--webkit-user-select: none;  /* Chrome all / Safari all */
--moz-user-select: none;     /* Firefox all */
--ms-user-select: none;      /* IE 10+ */
-user-select: none;  
-transition: 0.5s ease, transform 1ms;
+.t-sharp-nav a {
+    color: dodgerblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22pt;
+    -webkit-user-select: none;
+    /* Chrome all / Safari all */
+    -moz-user-select: none;
+    /* Firefox all */
+    -ms-user-select: none;
+    /* IE 10+ */
+    user-select: none;
+    transition: 0.5s ease, transform 1ms;
 }
+
 .t-sharp-nav a:hover {
     color: #fff;
 }
@@ -77,16 +110,18 @@ transition: 0.5s ease, transform 1ms;
     top: 29px;
     transform: rotate(90deg)
 }
+
 .a-projects {
     position: absolute;
     top: 188px;
     left: 36px;
-    transform: rotate(90deg)}
+    transform: rotate(90deg)
+}
 
 
 
 
- /* elements text */
+/* elements text */
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico');
 /* .t-sharp {
     position: absolute;
@@ -110,19 +145,23 @@ transition: 0.5s ease, transform 1ms;
 
 .t-sharp-elements span {
     color: rgb(214, 214, 214);
-    
-    -webkit-user-select: none;  /* Chrome all / Safari all */
-    -moz-user-select: none;     /* Firefox all */
-    -ms-user-select: none;      /* IE 10+ */
-    user-select: none;  
+
+    -webkit-user-select: none;
+    /* Chrome all / Safari all */
+    -moz-user-select: none;
+    /* Firefox all */
+    -ms-user-select: none;
+    /* IE 10+ */
+    user-select: none;
 
 }
+
 .s-interaction {
     position: absolute;
     left: 93px;
     top: 77px;
     font-size: 12pt;
-    transform: rotate(90deg) scale(1.05,1)
+    transform: rotate(90deg) scale(1.05, 1)
 }
 
 .s-inspiration {
@@ -132,87 +171,97 @@ transition: 0.5s ease, transform 1ms;
     font-size: 15pt;
     font-weight: 300;
 }
+
 .s-photography {
     position: absolute;
     left: 0px;
     top: 40px;
     font-size: 24pt;
-    transform: scale(0.96,1);
+    transform: scale(0.96, 1);
     font-family: 'Dancing Script', cursive;
 
 }
+
 .s-hello {
     position: absolute;
     left: 100px;
     top: 35px;
     font-size: 12pt;
-    transform: scale(1.2,1);
+    transform: scale(1.2, 1);
     font-family: 'Pacifico', cursive;
 }
+
 .s-touch {
     position: absolute;
     left: -10px;
     top: 92px;
     transform: rotate(90deg);
- 
+
     font-size: 10pt;
 }
+
 .s-more {
 
-position: absolute;
-left: 100px;
-top: 97px;
-transform: rotate(90deg) scale(1,3);
-font-size: 10pt;
+    position: absolute;
+    left: 100px;
+    top: 97px;
+    transform: rotate(90deg) scale(1, 3);
+    font-size: 10pt;
 }
 
 .s-html {
     position: absolute;
     left: 18px;
     top: 100.5px;
-    transform: scale(1.3,1.3)
+    transform: scale(1.3, 1.3)
 }
+
 .s-css {
-position: absolute;
-left: 62px;
-top: 101px;
-font-family: 'Pacifico', cursive;
-transform: scale(1.5,1)
+    position: absolute;
+    left: 62px;
+    top: 101px;
+    font-family: 'Pacifico', cursive;
+    transform: scale(1.5, 1)
 }
+
 .s-javascript {
-position: absolute;
-left: 19px;
-top: 78px;
-font-size: 13pt;
-transform: scale(1.15,1);
+    position: absolute;
+    left: 19px;
+    top: 78px;
+    font-size: 13pt;
+    transform: scale(1.15, 1);
 }
+
 .s-network {
     position: absolute;
     left: 129px;
     top: 271px;
     font-size: 12pt;
-    transform: scale(0.95,1.15)
+    transform: scale(0.95, 1.15)
 }
+
 .s-type {
     position: absolute;
     font-family: 'Dancing Script', cursive;
     left: 171px;
     top: 115px;
     font-size: 15pt;
-    transform: scale(1.7,1)
+    transform: scale(1.7, 1)
 }
+
 .s-dedication {
-      position: absolute;
+    position: absolute;
     left: 147px;
-transform: rotate(90deg);
+    transform: rotate(90deg);
     top: 197px;
     font-size: 19pt;
 }
+
 .s-frontend {
     font-family: 'Dancing Script', cursive;
     position: absolute;
     left: 97px;
-transform: rotate(90deg);
+    transform: rotate(90deg);
     top: 190px;
     font-size: 25pt;
 }
@@ -223,8 +272,9 @@ transform: rotate(90deg);
     top: 102px;
     font-size: 15 pt;
     font-weight: 100;
-    transform: scale(1.155,1)
+    transform: scale(1.155, 1)
 }
+
 .s-design {
     font-family: 'Dancing Script', cursive;
     position: absolute;
@@ -232,109 +282,120 @@ transform: rotate(90deg);
     top: 54px;
     font-size: 22pt;
 
-    transform: rotate(90deg) scale(1.2,1.2)
+    transform: rotate(90deg) scale(1.2, 1.2)
 }
+
 .s-simplicity {
     position: absolute;
     left: 242px;
     top: 90px;
     font-size: 9pt;
     font-weight: 100;
-    transform: scale(1.35,0.9)
-
+    transform: scale(1.35, 0.9)
 }
+
 .s-modern {
     position: absolute;
     left: 146px;
     top: 141px;
-    transform: scale(1.5,1)
+    transform: scale(1.5, 1)
 }
+
 .s-perfection {
     position: absolute;
     left: 140px;
     top: 3px;
     font-size: 16pt;
     font-weight: 100;
-    
+
 }
+
 .s-reactjs {
     position: absolute;
     left: 165px;
     top: 60px;
     font-size: 20pt;
-    transform: rotate(90deg) scale(1.2,1)
+    transform: rotate(90deg) scale(1.2, 1)
 }
+
 .s-details {
     position: absolute;
     left: 195px;
     top: 56px;
     font-size: 10pt;
-    transform: rotate(90deg) scale(1.32,1)
+    transform: rotate(90deg) scale(1.32, 1)
 }
+
 .s-100percent {
     position: absolute;
     left: 237px;
     top: 32px;
     font-size: 11pt;
     font-family: 'Pacifico', cursive;
-    transform: scale(1.2,1.6);
+    transform: scale(1.2, 1.6);
 }
+
 .s-fast {
     position: absolute;
     font-family: 'Dancing Script', cursive;
     left: 240px;
     top: 56px;
     font-size: 16pt;
-     transform: scale(1.2,1.8);
+    transform: scale(1.2, 1.8);
 }
+
 .s-success {
     position: absolute;
 
     left: 150px;
-    transform: rotate(90deg)  scale(1,2.3);
+    transform: rotate(90deg) scale(1, 2.3);
     top: 180px;
     font-size: 13pt;
-   
+
 
 }
-.s-self{
+
+.s-self {
     position: absolute;
     font-family: Arial, Helvetica, sans-serif;
     left: 172px;
-    transform: rotate(90deg) scale(1.5,1);
+    transform: rotate(90deg) scale(1.5, 1);
     top: 235px;
     font-size: 13pt;
-   
+
 
 }
-.s-taught{
+
+.s-taught {
     position: absolute;
-   
+
     left: 155px;
-    transform: rotate(90deg) scale(0.95,1.3);
+    transform: rotate(90deg) scale(0.95, 1.3);
     top: 237px;
     font-size: 10pt;
-   
+
 
 }
+
 .s-color {
     position: absolute;
     font-family: 'Pacifico', cursive;
     left: 141px;
-    transform: rotate(90deg) ;
+    transform: rotate(90deg);
     top: 187px;
     font-size: 12pt;
-   
+
 
 }
+
 .s-uiux {
     position: absolute;
     font-family: 'Pacifico', cursive;
     left: 141px;
-    transform: rotate(90deg) ;
+    transform: rotate(90deg);
     top: 232px;
     font-size: 12pt;
-   
+
 
 }
 
@@ -342,50 +403,51 @@ transform: rotate(90deg);
 .show {
     opacity: 1;
     transition: opacity 1000ms;
-  }
-  
-  .dim {
+}
+
+.dim {
     opacity: 0.2;
     transition: opacity 1000ms;
-  }
+}
 
-  
+/* portrait background */
 
-  /* portrait background */
-
- .portrait {
+.portrait {
     position: fixed;
     bottom: -5%;
-	right: -80px;
-	z-index: -1000;
+    right: -80px;
+    z-index: -1000;
 
 }
+
 .portrait img {
-	opacity: 0.1;
-	filter: alpha(opacity=10);
+    height: 100vh;
+    opacity: 0.1;
+    filter: alpha(opacity=10);
 
 
 }
 
 
 /* footer */
-.footer{
+.footer {
     position: absolute;
     bottom: 4px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin: 0 0 0 0.75em;
-	padding: 0 0 0 0.75em;
+    padding: 0 0 0 0.75em;
 }
+
 .icons {
-	text-decoration: none;
-	border-bottom: none;
+    text-decoration: none;
+    border-bottom: none;
     position: relative;
     font-size: 24pt;
 }
 
-.icons a{
+.icons a {
     color: #fff;
 }
 
